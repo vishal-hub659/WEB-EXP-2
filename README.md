@@ -18,6 +18,7 @@ Execute Django admin and create details for 10 books
 
 # PROGRAM
 '''
+
 admin.py
 
 from django.contrib import admin
@@ -41,7 +42,9 @@ class Employee (models.Model):
     age=models.IntegerField() 
     email=models.EmailField() 
 class EmployeeAdmin(admin.ModelAdmin):
+
     list_display=('eid','name','salary','age','email') 
+    
 '''
 # OUTPUT
 ![alt text](<Screenshot 2025-04-01 101615.png>)
