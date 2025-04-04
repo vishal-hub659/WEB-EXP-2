@@ -24,11 +24,17 @@ from django.contrib import admin
 
 
 from .models import Employee,EmployeeAdmin
+
 admin.site.register(Employee,EmployeeAdmin)
+
 models.py
+
 from django.db import models 
+
 from django.contrib import admin 
+
 class Employee (models.Model):
+
     eid=models.CharField(max_length=20,help_text="Employee ID") 
     name=models.CharField(max_length=100) 
     salary=models.IntegerField() 
